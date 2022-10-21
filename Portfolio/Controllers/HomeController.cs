@@ -33,11 +33,11 @@ namespace Portfolio.Controllers
 
             mySmtpClient.UseDefaultCredentials = false;
             NetworkCredential basicAuthenticationInfo = new
-           NetworkCredential("hopeshop99@outlook.com", "hopeshop78");
+           NetworkCredential("amalportfolio@outlook.com", "a99amool78");
 
             mySmtpClient.Credentials = basicAuthenticationInfo;
-            MailMessage message = new MailMessage("hopeshop99@outlook.com", "amalmomani99@yahoo.com");
-            string body = "From:" + name +"\n"+ "Message:"+ m + "\n" + "Sender Email:" + email;
+            MailMessage message = new MailMessage("amalportfolio@outlook.com", "amalmomani99@yahoo.com");
+            string body ="You recive message from your potoflio"+"\n"+"From:  " + name +"\n"+ "Message:  "+ m + "\n" + "Sender Email:  " + email;
             message.Subject = subject;
             message.Body = body;
             mySmtpClient.Send(message);
